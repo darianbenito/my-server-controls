@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DE157C0-A4F7-4103-B860-727639B1833A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UtilityServerControl</RootNamespace>
+    <AssemblyName>UtilityServerControl</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoComplete.cs" />
+    <Compile Include="AutoCompleteButton.cs" />
+    <Compile Include="AutoCompleteInput.cs" />
+    <Compile Include="BetweenDateTimePicker.cs" />
+    <Compile Include="DateTimePicker.cs" />
+    <Compile Include="MyFileUpload.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpDown.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="css\jquery.datetimepicker.min.css" />
+    <EmbeddedResource Include="js\jquery.datetimepicker.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="css\jquery.autocomplete.min.css" />
+    <EmbeddedResource Include="js\jquery.autocomplete.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documentation\AutoComplete\.htaccess" />
+    <None Include="Documentation\AutoComplete\autocompletelikegoogle.jquery.json" />
+    <None Include="Documentation\AutoComplete\bower.json" />
+    <None Include="Documentation\AutoComplete\package.json" />
+    <None Include="Documentation\AutoComplete\README.md" />
+    <None Include="Documentation\DateTimePicker\.gitignore" />
+    <None Include="Documentation\DateTimePicker\bower.json" />
+    <None Include="Documentation\DateTimePicker\datetimepicker.jquery.json" />
+    <None Include="Documentation\DateTimePicker\package.json" />
+    <None Include="Documentation\DateTimePicker\README.md" />
+    <None Include="Documentation\jQueryFileUpload\.gitignore" />
+    <None Include="Documentation\jQueryFileUpload\.jshintrc" />
+    <None Include="Documentation\jQueryFileUpload\blueimp-file-upload.jquery.json" />
+    <None Include="Documentation\jQueryFileUpload\bower.json" />
+    <None Include="Documentation\jQueryFileUpload\CONTRIBUTING.md" />
+    <None Include="Documentation\jQueryFileUpload\package.json" />
+    <None Include="Documentation\jQueryFileUpload\README.md" />
+    <None Include="Documentation\jQueryFileUpload\server\gae-go\app.yaml" />
+    <None Include="Documentation\jQueryFileUpload\server\gae-go\app\main.go" />
+    <None Include="Documentation\jQueryFileUpload\server\gae-python\app.yaml" />
+    <None Include="Documentation\jQueryFileUpload\server\gae-python\main.py" />
+    <None Include="Documentation\jQueryFileUpload\server\node\.gitignore" />
+    <None Include="Documentation\jQueryFileUpload\server\node\package.json" />
+    <None Include="Documentation\jQueryFileUpload\server\node\public\files\.gitignore" />
+    <None Include="Documentation\jQueryFileUpload\server\node\public\files\thumbnail\.gitignore" />
+    <None Include="Documentation\jQueryFileUpload\server\node\tmp\.gitignore" />
+    <None Include="Documentation\jQueryFileUpload\server\php\files\.gitignore" />
+    <None Include="Documentation\jQueryFileUpload\server\php\files\.htaccess" />
+    <None Include="Documentation\jQueryFileUpload\server\php\index.php" />
+    <None Include="Documentation\jQueryFileUpload\server\php\UploadHandler.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documentation\AutoComplete\demo\demo.css" />
+    <Content Include="Documentation\AutoComplete\demo\jquery.js" />
+    <Content Include="Documentation\AutoComplete\demo\prettify.css" />
+    <Content Include="Documentation\AutoComplete\demo\prettify.js" />
+    <Content Include="Documentation\AutoComplete\index.html" />
+    <Content Include="Documentation\AutoComplete\jquery.autocomplete.css" />
+    <Content Include="Documentation\AutoComplete\jquery.autocomplete.js" />
+    <Content Include="Documentation\AutoComplete\MIT-LICENSE.txt" />
+    <Content Include="Documentation\DateTimePicker\index.html" />
+    <Content Include="Documentation\DateTimePicker\jquery.datetimepicker.css" />
+    <Content Include="Documentation\DateTimePicker\jquery.datetimepicker.js" />
+    <Content Include="Documentation\DateTimePicker\jquery.js" />
+    <Content Include="Documentation\DateTimePicker\MIT-LICENSE.txt" />
+    <Content Include="Documentation\DateTimePicker\screen\1.png" />
+    <Content Include="Documentation\DateTimePicker\screen\2.png" />
+    <Content Include="Documentation\DateTimePicker\screen\3.1.png" />
+    <Content Include="Documentation\DateTimePicker\screen\3.png" />
+    <Content Include="Documentation\jQueryFileUpload\angularjs.html" />
+    <Content Include="Documentation\jQueryFileUpload\basic-plus.html" />
+    <Content Include="Documentation\jQueryFileUpload\basic.html" />
+    <Content Include="Documentation\jQueryFileUpload\cors\postmessage.html" />
+    <Content Include="Documentation\jQueryFileUpload\cors\result.html" />
+    <Content Include="Documentation\jQueryFileUpload\css\demo-ie8.css" />
+    <Content Include="Documentation\jQueryFileUpload\css\demo.css" />
+    <Content Include="Documentation\jQueryFileUpload\css\jquery.fileupload-noscript.css" />
+    <Content Include="Documentation\jQueryFileUpload\css\jquery.fileupload-ui-noscript.css" />
+    <Content Include="Documentation\jQueryFileUpload\css\jquery.fileupload-ui.css" />
+    <Content Include="Documentation\jQueryFileUpload\css\jquery.fileupload.css" />
+    <Content Include="Documentation\jQueryFileUpload\css\style.css" />
+    <Content Include="Documentation\jQueryFileUpload\Gruntfile.js" />
+    <Content Include="Documentation\jQueryFileUpload\img\loading.gif" />
+    <Content Include="Documentation\jQueryFileUpload\img\progressbar.gif" />
+    <Content Include="Documentation\jQueryFileUpload\index.html" />
+    <Content Include="Documentation\jQueryFileUpload\jquery-ui.html" />
+    <Content Include="Documentation\jQueryFileUpload\js\app.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\cors\jquery.postmessage-transport.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\cors\jquery.xdr-transport.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload-angular.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload-audio.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload-image.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload-jquery-ui.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload-process.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload-ui.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload-validate.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload-video.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.fileupload.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\jquery.iframe-transport.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\main.js" />
+    <Content Include="Documentation\jQueryFileUpload\js\vendor\jquery.ui.widget.js" />
+    <Content Include="Documentation\jQueryFileUpload\server\gae-go\static\favicon.ico" />
+    <Content Include="Documentation\jQueryFileUpload\server\gae-go\static\robots.txt" />
+    <Content Include="Documentation\jQueryFileUpload\server\gae-python\static\favicon.ico" />
+    <Content Include="Documentation\jQueryFileUpload\server\gae-python\static\robots.txt" />
+    <Content Include="Documentation\jQueryFileUpload\server\node\server.js" />
+    <Content Include="Documentation\jQueryFileUpload\test\index.html" />
+    <Content Include="Documentation\jQueryFileUpload\test\test.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

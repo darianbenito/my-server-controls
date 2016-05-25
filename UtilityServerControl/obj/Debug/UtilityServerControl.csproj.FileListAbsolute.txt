@@ -1,0 +1,10 @@
+C:\SVN\_UtilityServerControlNET\UtilityServerControl\UtilityServerControl\bin\Debug\UtilityServerControl.dll
+C:\SVN\_UtilityServerControlNET\UtilityServerControl\UtilityServerControl\bin\Debug\UtilityServerControl.pdb
+C:\SVN\_UtilityServerControlNET\UtilityServerControl\UtilityServerControl\obj\Debug\UtilityServerControl.csprojResolveAssemblyReference.cache
+C:\SVN\_UtilityServerControlNET\UtilityServerControl\UtilityServerControl\obj\Debug\UtilityServerControl.dll
+C:\SVN\_UtilityServerControlNET\UtilityServerControl\UtilityServerControl\obj\Debug\UtilityServerControl.pdb
+C:\SVN\UtilityServerControlNET\trunk\UtilityServerControl\bin\Debug\UtilityServerControl.dll
+C:\SVN\UtilityServerControlNET\trunk\UtilityServerControl\bin\Debug\UtilityServerControl.pdb
+C:\SVN\UtilityServerControlNET\trunk\UtilityServerControl\obj\Debug\UtilityServerControl.csprojResolveAssemblyReference.cache
+C:\SVN\UtilityServerControlNET\trunk\UtilityServerControl\obj\Debug\UtilityServerControl.dll
+C:\SVN\UtilityServerControlNET\trunk\UtilityServerControl\obj\Debug\UtilityServerControl.pdb
